@@ -38,7 +38,7 @@ cd digit_recognition
 4- Install the required dependencies:
 - pip install tensorflow
 - pip install matplotlib
-- pip install numpy
+- pip install django
 
 5- Run the Django development server:
 python manage.py runserver
