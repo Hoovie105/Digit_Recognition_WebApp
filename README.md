@@ -6,20 +6,20 @@ confidence score. The app features a stylish UI built with Bootstrap, image prev
 
 
 Features
-Handwritten digit recognition using a CNN model.
-Model confidence score display.
-Stylish UI with Bootstrap for a responsive and clean design.
-Image preview before submission for better user experience.
-Loading animation while processing the prediction.
-Technologies Used
-TensorFlow: For the machine learning model.
-Keras: For building and training the neural network.
-NumPy: For numerical operations.
-Matplotlib: For plotting and visualizations (if needed).
-Django: For the web application backend.
-Python: The primary programming language.
-HTML/CSS: For the frontend structure and styling.
-JavaScript: For interactivity
+- Handwritten digit recognition using a CNN model.
+- Model confidence score display.
+- Stylish UI with Bootstrap for a responsive and clean design.
+- Image preview before submission for better user experience.
+- Loading animation while processing the prediction.
+- Technologies Used
+- TensorFlow: For the machine learning model.
+- Keras: For building and training the neural network.
+- NumPy: For numerical operations.
+- Matplotlib: For plotting and visualizations (if needed).
+- Django: For the web application backend.
+- Python: The primary programming language.
+- HTML/CSS: For the frontend structure and styling.
+- 'JavaScript: For interactivity'
 
 Installation
 To set up the project locally:
