@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            padding: 30px;
+            background: #495057;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .img-preview {
+            display: none;
+            margin-top: 15px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            padding: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-preview:hover {
+            transform: scale(1.05);
+        }
+        .btn-custom {
+            border-radius: 50px;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+        }
+        .alert-custom {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .loading-spinner {
+            display: none;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h2 class="mb-4">Handwritten Digit Recognition</h2>
+
+        <!-- Display error messages -->
+        {% if error %}
+            <div class="alert alert-danger alert-custom">{{ error }}</div>
+        {% endif %}
+
+        <form action="" method="post" enctype="multipart/form-data" class="mb-3" id="imageForm">
+            {% csrf_token %}
+            <div class="mb-3">
+                <input type="file" class="form-control" name="image" id="imageInput" required title="Choose an image to classify">
+            </div>
+
+            <!-- Image Preview -->
+            <img id="imagePreview" class="img-preview" src="" alt="Image preview">
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-custom mt-3" id="submitBtn">Classify</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("imageInput").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imgPreview = document.getElementById("imagePreview");
+                    imgPreview.src = e.target.result;
+                    imgPreview.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Show loading spinner on form submit
+        document.getElementById("imageForm").addEventListener("submit", function() {
+            document.getElementById("loadingSpinner").style.display = "block";
+            document.getElementById("submitBtn").disabled = true;
+        });
+    </script>
+
+</body>
+</html>
