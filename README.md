@@ -31,14 +31,14 @@ git clone <https://github.com/Hoovie105/Digit_recognition_WebApp>
 cd digit_recognition
 
 3- Create a virtual environment (optional but recommended):
-python -m venv env
-source env/bin/activate  # For Linux/Mac
-.\env\Scripts\activate   # For Windows
+- python -m venv env
+- source env/bin/activate  # For Linux/Mac
+- .\env\Scripts\activate   # For Windows
 
 4- Install the required dependencies:
-pip install tensorflow
-pip install matplotlib
-pip install numpy
+- pip install tensorflow
+- pip install matplotlib
+- pip install numpy
 
 5- Run the Django development server:
 python manage.py runserver
