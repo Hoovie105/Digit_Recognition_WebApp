@@ -19,7 +19,7 @@ Features
 - Django: For the web application backend.
 - Python: The primary programming language.
 - HTML/CSS: For the frontend structure and styling.
-- 'JavaScript: For interactivity'
+- JavaScript: For interactivity
 
 Installation
 To set up the project locally:
