@@ -1,6 +1,4 @@
-Digit_recognition_WebApp
-Description
-The Digit_recognition_WebApp is a web application that uses a Convolutional Neural Network (CNN) model to recognize handwritten digits. 
+The Digit_Recognition_WebApp is a web application that uses a Convolutional Neural Network (CNN) model to recognize handwritten digits. 
 The model is trained on the MNIST dataset and implemented using Django. Users can submit an image, and the model will predict the digit, displaying the 
 confidence score. The app features a stylish UI built with Bootstrap, image preview before submission, and a loading animation during processing.
 
