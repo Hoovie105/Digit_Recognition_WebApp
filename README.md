@@ -25,7 +25,7 @@ Installation
 To set up the project locally:
 
 1- Clone the repository:
-git clone <https://github.com/Hoovie105/Digit_recognition_WebApp>
+git clone <https://github.com/Hoovie105/Digit_Recognition_WebApp>
 
 2-Navigate to the project directory:
 cd digit_recognition
