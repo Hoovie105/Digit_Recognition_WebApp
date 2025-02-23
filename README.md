@@ -5,7 +5,7 @@ confidence score. The app features a stylish UI built with Bootstrap, image prev
 ![image](https://github.com/user-attachments/assets/d67a5d7c-2b55-4382-bc65-8b7bbaf382ae)
 
 
-Features
+Features:
 - Handwritten digit recognition using a CNN model.
 - Model confidence score display.
 - Stylish UI with Bootstrap for a responsive and clean design.
