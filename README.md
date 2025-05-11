@@ -43,5 +43,5 @@ cd digit_recognition
 5- Run the Django development server:
 python manage.py runserver
 
-Contributing
+##Contributing
 Feel free to contribute by forking the repository and submitting a pull request. All contributions are welcome!
